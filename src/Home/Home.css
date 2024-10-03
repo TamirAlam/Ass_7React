@@ -1,0 +1,107 @@
+#homepage {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(235, 235, 235, 0.95); /* Soft gray background */
+  background-image: linear-gradient(to bottom right, #f0f0f0, #c1c1c1); /* Subtle gradient */
+}
+
+#card {
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1); /* Soft box shadow for depth */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px; /* Rounded corners */
+  height: auto; /* Adjust height based on content */
+  width: 40%;
+  max-width: 500px;
+}
+
+#heading h2 {
+  font-size: 28px;
+  color: #0077cc; /* A deeper blue for better readability */
+  margin-bottom: 20px;
+}
+
+#add-items-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#add-items-container input {
+  flex-grow: 1; /* Take available space */
+  margin-right: 10px;
+  padding: 10px;
+  border: 2px solid #0077cc; /* Blue border */
+  border-radius: 5px; /* Rounded input field */
+}
+
+#add-items-container button {
+  background-color: #0077cc;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transition for hover effects */
+  border-radius: 5px;
+}
+
+#add-items-container button:hover {
+  background-color: #005fa3; /* Darker blue on hover */
+  transform: scale(1.05); /* Slight increase in size */
+}
+
+#output {
+  width: 100%;
+}
+
+#output div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #ccc; /* Separator for items */
+}
+
+#output div:hover {
+  background-color: #f9f9f9; /* Highlight on hover */
+}
+
+#output p {
+  margin: 0;
+  flex-grow: 1;
+  padding-left: 10px;
+}
+
+#output input[type="checkbox"] {
+  cursor: pointer;
+}
+
+#output button {
+  background-color: #ff6347; /* Tomato red for delete buttons */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+#output button:hover {
+  background-color: #e55335; /* Darker red on hover */
+}
+
+#output p {
+
+  text-transform: capitalize;
+}
